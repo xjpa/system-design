@@ -1,12 +1,11 @@
-# Python OOP Practice Lab: Issue Tracker
+# Python Foundations and OOP Practice Lab
 
-Build the domain layer of a small issue-tracking system. The lab starts with
-classes and value objects, then grows into the kind of layered, testable design
-you will see in a Python codebase at work.
+Start from Python syntax—including what `def` and `()` mean—then build the domain
+layer of a small issue-tracking system. The lab eventually reaches the kind of
+layered, testable OOP design you will see in a Python codebase at work.
 
-This is deliberately a **starter**, not a finished application. Each milestone
-is one self-contained file containing the instructions, starter code, and tests.
-You never need to switch files while solving an exercise.
+Every lesson is one self-contained file containing a tutorial, worked example,
+small TODOs, and checks. You never need to switch files while solving it.
 
 ## What you will learn
 
@@ -21,21 +20,52 @@ You never need to switch files while solving an exercise.
 
 ## Before you begin
 
-Milestone 0 is designed for someone who knows variables, conditionals, loops,
-and basic functions. Later milestones introduce the additional Python features
-when they become useful. Use Python 3.10 or newer.
+The Foundations track assumes only that you can open a terminal and edit a text
+file. It explicitly teaches variables, `def`, function calls, parameters,
+`return`, conditions, loops, dictionaries, errors, classes, type hints,
+properties, enums, dataclasses, and equality. Use Python 3.10 or newer.
 
 No packages are needed for the main exercises:
 
 ```bash
 cd oop-practice-lab
-python exercises/00_bank_account.py
+python foundations/00_how_to_use_these_lessons.py
 ```
 
-The file will stop at the first failing requirement. Implement its TODOs and run
-the same command again. When it prints `Milestone 0 passed`, move to file 01.
-Each file runs independently, so unfinished later milestones cannot break the
-one you are currently doing.
+Then open and run each numbered file in `foundations/`. A file may stop at its
+first unfinished check. Implement one TODO, rerun the same command, and use the
+new result as feedback. Each file runs independently.
+
+## How to approach a programming problem
+
+Do not try to hold the entire problem in your head. Use this loop:
+
+1. Rewrite the requirement as one tiny input/output example.
+2. Circle the syntax you recognize; look up only the first unfamiliar piece.
+3. Run the starter before editing it and read the last error line.
+4. Change one TODO—not the whole file—then rerun it.
+5. When it passes, change an input and predict the result before rerunning.
+6. Explain your solution aloud in ordinary language.
+
+If stuck for 15 minutes, write down: “I expected ___, but got ___, on line ___.”
+That is a strong debugging question to bring to a colleague or AI.
+
+## Learning path
+
+Complete these in order:
+
+```text
+foundations/00–01  running files, values, and variables
+foundations/02–04  def, calls, parameters, and return
+foundations/05–08  decisions, collections, and errors
+foundations/09–10  classes, objects, and class practice
+foundations/11–14  work-style syntax used by the OOP exercises
+exercises/00–05    the issue-tracker OOP lab
+```
+
+Do not rush. One foundations file per study session is completely reasonable.
+After file 10 you can try the BankAccount exercise; files 11–14 prepare you for
+the denser syntax in the later OOP exercises.
 
 ## The scenario
 
