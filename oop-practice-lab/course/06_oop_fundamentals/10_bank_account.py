@@ -1,8 +1,8 @@
-"""Milestone 0: Your first useful class.
+"""LESSON 06.10: BankAccount and encapsulation.
 
 Run this file directly:
 
-    python exercises/00_bank_account.py
+    python course/06_oop_fundamentals/10_bank_account.py
 
 Your task is to implement BankAccount until every assertion at the bottom
 passes. Work only in this file.
@@ -60,7 +60,7 @@ def run_tests() -> None:
     check_raises(ValueError, lambda: account.withdraw(1000))
     assert account.balance == 65
 
-    print("Milestone 0 passed: BankAccount protects its own state.")
+    print("Lesson 06.10 passed: BankAccount protects its own state.")
 
 
 if __name__ == "__main__":

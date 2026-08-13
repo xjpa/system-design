@@ -1,6 +1,6 @@
-"""FOUNDATIONS 13: Imports, enums, and dataclasses
+"""LESSON 05.30: Imports, enums, and dataclasses
 
-Run: python foundations/13_imports_enums_dataclasses.py
+Run: python course/05_python_object_tools/30_imports_enums_dataclasses.py
 
 An import brings in code that somebody already wrote:
 
@@ -73,4 +73,4 @@ assert hasattr(Priority, "HIGH"), "Add HIGH = auto() inside Priority"
 task = Task("Study OOP", Priority.HIGH)
 assert task.title == "Study OOP"
 assert task.priority is Priority.HIGH
-print("Foundations 13 passed: you used enums and generated class boilerplate.")
+print("Lesson 05.30 passed: you used enums and generated class boilerplate.")

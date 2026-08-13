@@ -1,6 +1,6 @@
-"""Milestone 3: Polymorphism with the Strategy pattern.
+"""LESSON 07.10: Polymorphism with the Strategy pattern.
 
-Run: python exercises/03_strategy.py
+Run: python course/07_oop_patterns/10_strategy.py
 
 Implement the three policies. Then add WeekendPolicy and one assertion for it.
 Concepts: inheritance, abstract methods, polymorphism, Open/Closed Principle.
@@ -56,7 +56,7 @@ def run_tests() -> None:
     for policy, priority, hours in examples:
         actual = policy.deadline(opened_at=opened, priority=priority)
         assert actual == opened + timedelta(hours=hours)
-    print("Milestone 3 passed: interchangeable policies calculate deadlines.")
+    print("Lesson 07.10 passed: interchangeable policies calculate deadlines.")
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
-"""Milestone 2: A behavior-rich entity.
+"""LESSON 06.30: A behavior-rich entity.
 
-Run: python exercises/02_issue_entity.py
+Run: python course/06_oop_fundamentals/30_issue_entity.py
 
 Everything required for this exercise is in this file. Implement Issue only.
 Concepts: encapsulation, properties, class methods, invariants, state machines.
@@ -153,7 +153,7 @@ def run_tests() -> None:
     issue.reopen()
     assert issue.status is IssueStatus.OPEN and issue.assignee is None
     expect_error(InvalidTransitionError, issue.reopen)
-    print("Milestone 2 passed: Issue enforces its lifecycle.")
+    print("Lesson 06.30 passed: Issue enforces its lifecycle.")
 
 
 if __name__ == "__main__":

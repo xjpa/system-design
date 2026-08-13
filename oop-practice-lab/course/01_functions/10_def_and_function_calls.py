@@ -1,6 +1,6 @@
-"""FOUNDATIONS 02: What does def mean?
+"""LESSON 01.10: What does def mean?
 
-Run: python foundations/02_def_and_functions.py
+Run: python course/01_functions/10_def_and_function_calls.py
 
 `def` means DEFINE A FUNCTION.
 
@@ -46,4 +46,4 @@ def cheer():
 print("Calling your cheer function:")
 cheer()
 
-print("Foundations 02 finished. Confirm that your cheer appeared above.")
+print("Lesson 01.10 finished. Confirm that your cheer appeared above.")

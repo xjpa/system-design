@@ -1,6 +1,6 @@
-"""FOUNDATIONS 03: Function inputs
+"""LESSON 01.20: Function inputs
 
-Run: python foundations/03_parameters_and_arguments.py
+Run: python course/01_functions/20_parameters_and_arguments.py
 
 Some recipes need ingredients. Functions receive inputs through PARAMETERS:
 
@@ -41,4 +41,4 @@ def introduce(name, job):
 introduce("Sam", "developer")
 
 
-print("Foundations 03 finished. Confirm that Sam's introduction appeared above.")
+print("Lesson 01.20 finished. Confirm that Sam's introduction appeared above.")

@@ -2,5 +2,5 @@
 
 ## 0. Python Review
 
-- [Job-oriented Python OOP practice lab](oop-practice-lab/README.md)
-
+- [OOP Practice Lab](oop-practice-lab/README.md) - job-oriented python OOP practice lab I used to learn python
+- []() - 

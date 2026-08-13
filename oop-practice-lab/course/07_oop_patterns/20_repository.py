@@ -1,6 +1,6 @@
-"""Milestone 4: A repository abstraction.
+"""LESSON 07.20: A repository abstraction.
 
-Run: python exercises/04_repository.py
+Run: python course/07_oop_patterns/20_repository.py
 
 Implement InMemoryIssueRepository only. Everything else is supporting material.
 Concepts: Protocol, abstraction, collection ownership, fake implementations.
@@ -84,7 +84,7 @@ def run_tests() -> None:
     issue.title = "Updated title"
     repository.update(issue)
     assert repository.get(issue.id).title == "Updated title"  # type: ignore[union-attr]
-    print("Milestone 4 passed: repository behavior is behind an interface.")
+    print("Lesson 07.20 passed: repository behavior is behind an interface.")
 
 
 if __name__ == "__main__":

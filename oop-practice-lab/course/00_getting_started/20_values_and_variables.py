@@ -1,6 +1,6 @@
-"""FOUNDATIONS 01: Values and variables
+"""LESSON 00.20: Values and variables
 
-Run: python foundations/01_values_and_variables.py
+Run: python course/00_getting_started/20_values_and_variables.py
 
 A VALUE is a piece of data:
 
@@ -38,4 +38,4 @@ assert learner_name != "???", "Replace ??? with your name"
 assert hours_practiced >= 0, "Use zero or a positive whole number"
 assert enjoys_python is True or enjoys_python is False
 
-print("Foundations 01 passed: you created and used variables.")
+print("Lesson 00.20 passed: you created and used variables.")

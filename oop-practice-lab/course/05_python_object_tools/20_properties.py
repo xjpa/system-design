@@ -1,6 +1,6 @@
-"""FOUNDATIONS 12: Private attributes and properties
+"""LESSON 05.20: Private attributes and properties
 
-Run: python foundations/12_properties.py
+Run: python course/05_python_object_tools/20_properties.py
 
 By convention, an attribute beginning with _ is internal to the class:
 
@@ -58,4 +58,4 @@ temperature = Temperature(25)
 assert hasattr(temperature, "_celsius"), "Store celsius on self._celsius"
 assert hasattr(Temperature, "celsius"), "Add @property and def celsius(self)"
 assert temperature.celsius == 25
-print("Foundations 12 passed: you can read controlled object state.")
+print("Lesson 05.20 passed: you can read controlled object state.")

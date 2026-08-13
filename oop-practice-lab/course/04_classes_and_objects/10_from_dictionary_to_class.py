@@ -1,6 +1,6 @@
-"""FOUNDATIONS 09: Why classes exist
+"""LESSON 04.10: Why classes exist
 
-Run: python foundations/09_from_dictionary_to_class.py
+Run: python course/04_classes_and_objects/10_from_dictionary_to_class.py
 
 With a dictionary, any caller can create nonsense or change data directly:
 
@@ -67,4 +67,4 @@ assert learn.complete is False
 learn.mark_complete()
 assert learn.complete is True
 assert practice.complete is False
-print("Foundations 09 passed: you created objects with state and behavior.")
+print("Lesson 04.10 passed: you created objects with state and behavior.")

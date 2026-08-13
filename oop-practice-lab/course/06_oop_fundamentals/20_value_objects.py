@@ -1,6 +1,6 @@
-"""Milestone 1: Value objects.
+"""LESSON 06.20: Value objects.
 
-Run: python exercises/01_value_objects.py
+Run: python course/06_oop_fundamentals/20_value_objects.py
 
 Implement User and Comment until this file prints its success message.
 Concepts: dataclass, enums, validation, normalization, immutability, equality.
@@ -74,7 +74,7 @@ def run_tests() -> None:
         raise AssertionError("Comment should be immutable")
     expect_error(ValueError, lambda: Comment(user, " ", datetime.now(timezone.utc)))
     expect_error(ValueError, lambda: Comment(user, "body", datetime(2026, 1, 1)))
-    print("Milestone 1 passed: valid, immutable value objects created.")
+    print("Lesson 06.20 passed: valid, immutable value objects created.")
 
 
 if __name__ == "__main__":

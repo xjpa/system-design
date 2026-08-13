@@ -1,8 +1,8 @@
-"""FOUNDATIONS 00: How to use these lessons
+"""LESSON 00.10: How to use these lessons
 
 Run this file from the oop-practice-lab folder:
 
-    python foundations/00_how_to_use_these_lessons.py
+    python course/00_getting_started/10_how_to_use_these_lessons.py
 
 You do not need to understand every symbol before running it.
 
@@ -25,4 +25,4 @@ For example, this assertion succeeds silently:
 answer = 2 + 2
 assert answer == 4
 
-print("Foundations 00 passed. You ran a Python file successfully!")
+print("Lesson 00.10 passed. You ran a Python file successfully!")

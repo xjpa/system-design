@@ -1,6 +1,6 @@
-"""FOUNDATIONS 07: Dictionaries
+"""LESSON 02.30: Dictionaries
 
-Run: python foundations/07_dictionaries.py
+Run: python course/02_control_flow_and_collections/30_dictionaries.py
 
 A dictionary stores key/value pairs:
 
@@ -57,4 +57,4 @@ team = [
 assert count_roles(team) == {"developer": 2, "designer": 1}, (
     "Increase the count matching each user's role"
 )
-print("Foundations 07 passed: you used structured key/value data.")
+print("Lesson 02.30 passed: you used structured key/value data.")

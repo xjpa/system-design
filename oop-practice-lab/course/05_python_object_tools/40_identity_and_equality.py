@@ -1,6 +1,6 @@
-"""FOUNDATIONS 14: Object identity and equality
+"""LESSON 05.40: Object identity and equality
 
-Run: python foundations/14_identity_and_equality.py
+Run: python course/05_python_object_tools/40_identity_and_equality.py
 
 `==` asks whether two values should be considered equal. A class can define the
 answer with the special method __eq__:
@@ -39,4 +39,4 @@ different_person = User(2, "Ada")
 assert original == renamed, "Users with the same ID should compare equal"
 assert original != different_person, "Users with different IDs should not be equal"
 assert (original == "not a user") is False
-print("Foundations 14 passed: entity equality follows stable identity.")
+print("Lesson 05.40 passed: entity equality follows stable identity.")

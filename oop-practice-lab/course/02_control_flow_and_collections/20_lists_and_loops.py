@@ -1,6 +1,6 @@
-"""FOUNDATIONS 06: Lists and loops
+"""LESSON 02.20: Lists and loops
 
-Run: python foundations/06_lists_and_loops.py
+Run: python course/02_control_flow_and_collections/20_lists_and_loops.py
 
 A list stores several values in order:
 
@@ -49,4 +49,4 @@ def long_names(names):
 assert long_names(["Ada", "Grace", "Lin", "James"]) == ["Grace", "James"], (
     "Append names only when len(name) is greater than 3"
 )
-print("Foundations 06 passed: you processed collections with loops.")
+print("Lesson 02.20 passed: you processed collections with loops.")

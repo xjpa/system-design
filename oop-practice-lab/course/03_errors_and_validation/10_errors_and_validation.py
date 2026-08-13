@@ -1,6 +1,6 @@
-"""FOUNDATIONS 08: Errors and validation
+"""LESSON 03.10: Errors and validation
 
-Run: python foundations/08_errors_and_validation.py
+Run: python course/03_errors_and_validation/10_errors_and_validation.py
 
 An exception says a function cannot finish normally. Raise one when an input is
 invalid instead of returning a misleading answer:
@@ -49,4 +49,4 @@ assert withdraw(100, 30) == 70, "A valid withdrawal should return balance - amou
 expect_value_error(100, 0)
 expect_value_error(100, -5)
 expect_value_error(100, 101)
-print("Foundations 08 passed: your function rejects invalid inputs.")
+print("Lesson 03.10 passed: your function rejects invalid inputs.")

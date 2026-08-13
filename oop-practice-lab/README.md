@@ -29,12 +29,13 @@ No packages are needed for the main exercises:
 
 ```bash
 cd oop-practice-lab
-python foundations/00_how_to_use_these_lessons.py
+python course/00_getting_started/10_how_to_use_these_lessons.py
 ```
 
-Then open and run each numbered file in `foundations/`. A file may stop at its
-first unfinished check. Implement one TODO, rerun the same command, and use the
-new result as feedback. Each file runs independently.
+Then follow the ordered topic directories under `course/`. Each topic has its
+own README with prerequisites and lesson order. A file may stop at its first
+unfinished check. Implement one TODO, rerun the same command, and use the new
+result as feedback. Each file runs independently.
 
 ## How to approach a programming problem
 
@@ -54,18 +55,33 @@ That is a strong debugging question to bring to a colleague or AI.
 
 Complete these in order:
 
-```text
-foundations/00–01  running files, values, and variables
-foundations/02–04  def, calls, parameters, and return
-foundations/05–08  decisions, collections, and errors
-foundations/09–10  classes, objects, and class practice
-foundations/11–14  work-style syntax used by the OOP exercises
-exercises/00–05    the issue-tracker OOP lab
-```
+| Order | Topic | Purpose |
+| ---: | --- | --- |
+| 00 | `getting_started` | Running files, values, and variables |
+| 01 | `functions` | `def`, calls, parameters, and return |
+| 02 | `control_flow_and_collections` | Decisions, loops, lists, and dictionaries |
+| 03 | `errors_and_validation` | Rejecting invalid input safely |
+| 04 | `classes_and_objects` | `class`, `self`, `__init__`, and methods |
+| 05 | `python_object_tools` | Type hints, properties, enums, dataclasses, equality |
+| 06 | `oop_fundamentals` | Encapsulation, value objects, and entities |
+| 07 | `oop_patterns` | Strategy and repository abstractions |
+| 08 | `oop_architecture` | Services and dependency injection |
 
 Do not rush. One foundations file per study session is completely reasonable.
-After file 10 you can try the BankAccount exercise; files 11–14 prepare you for
-the denser syntax in the later OOP exercises.
+After topic 04 you can preview BankAccount; topic 05 prepares you for the denser
+syntax in the remaining OOP exercises.
+
+### Adding or splitting lessons later
+
+Keep one concept or exercise per file. Within a topic, use numbers spaced by ten
+(`10_`, `20_`, `30_`) for new material. The current files use compact numbers,
+so renumber them when you first expand that topic. For example, split a lesson
+into `20_parameters.py`, `30_positional_arguments.py`, and
+`40_keyword_arguments.py`. Update only that topic's README; later topic numbers
+and paths remain stable.
+
+If a new subject has at least three lessons and a distinct prerequisite, give it
+a new numbered topic directory and shift later topic directories together.
 
 ## The scenario
 
@@ -101,17 +117,17 @@ For every milestone:
 Exercise commands:
 
 ```bash
-python exercises/00_bank_account.py
-python exercises/01_value_objects.py
-python exercises/02_issue_entity.py
-python exercises/03_strategy.py
-python exercises/04_repository.py
-python exercises/05_service.py
+python course/06_oop_fundamentals/10_bank_account.py
+python course/06_oop_fundamentals/20_value_objects.py
+python course/06_oop_fundamentals/30_issue_entity.py
+python course/07_oop_patterns/10_strategy.py
+python course/07_oop_patterns/20_repository.py
+python course/08_oop_architecture/10_service.py
 ```
 
-## Milestone 0 — Your first useful class (1–2 hours)
+## Lesson 06.10 — Your first useful class (1–2 hours)
 
-File: `exercises/00_bank_account.py`
+File: `course/06_oop_fundamentals/10_bank_account.py`
 
 Implement `BankAccount`. You will learn what `class`, `self`, `__init__`,
 methods, and properties mean while protecting a balance from invalid changes.
@@ -120,9 +136,9 @@ The file explains every feature beyond loops and basic functions that you need.
 Reflection: Why should callers use `deposit` instead of changing the balance
 directly?
 
-## Milestone 1 — Value objects (2–3 hours)
+## Lesson 06.20 — Value objects (2–3 hours)
 
-File: `exercises/01_value_objects.py`
+File: `course/06_oop_fundamentals/20_value_objects.py`
 
 Implement `User`, `Comment`, and the enum-driven vocabulary. Requirements:
 
@@ -135,9 +151,9 @@ Implement `User`, `Comment`, and the enum-driven vocabulary. Requirements:
 Reflection: Why is a frozen comment safer than returning a mutable dictionary?
 When should two objects be equal?
 
-## Milestone 2 — A behavior-rich entity (4–5 hours)
+## Lesson 06.30 — A behavior-rich entity (4–5 hours)
 
-File: `exercises/02_issue_entity.py`
+File: `course/06_oop_fundamentals/30_issue_entity.py`
 
 Implement `Issue`. Keep lifecycle rules inside the entity rather than in the
 caller:
@@ -153,9 +169,9 @@ caller:
 Reflection: Which invalid states became impossible? What would break if callers
 could assign directly to `issue.status` or append directly to its comments?
 
-## Milestone 3 — Polymorphic policies (3–4 hours)
+## Lesson 07.10 — Polymorphic policies (3–4 hours)
 
-File: `exercises/03_strategy.py`
+File: `course/07_oop_patterns/10_strategy.py`
 
 Implement three response-deadline strategies behind `ResponsePolicy`:
 
@@ -170,9 +186,9 @@ Reflection: Why is one strategy object preferable to conditionals scattered
 through the service? Why is inheritance appropriate here but not for every code
 reuse opportunity?
 
-## Milestone 4 — Repository abstraction (3–4 hours)
+## Lesson 07.20 — Repository abstraction (3–4 hours)
 
-File: `exercises/04_repository.py`
+File: `course/07_oop_patterns/20_repository.py`
 
 Implement `InMemoryIssueRepository` against the `IssueRepository` protocol.
 It must save, update, fetch, list, and reject duplicate IDs. Do not leak its
@@ -184,9 +200,9 @@ Neither the domain model nor the service should need to change.
 Reflection: Is the in-memory repository a mock, fake, stub, or spy? What is
 gained by depending on a protocol rather than a concrete database class?
 
-## Milestone 5 — Application service and dependency injection (4–6 hours)
+## Lesson 08.10 — Application service and dependency injection (4–6 hours)
 
-File: `exercises/05_service.py`
+File: `course/08_oop_architecture/10_service.py`
 
 Implement the use cases in `IssueService`:
 
@@ -198,7 +214,7 @@ Implement the use cases in `IssueService`:
 
 The service receives its repository, notifier, clock, and ID factory in its
 constructor. Its 24-hour response deadline is deliberately simple here; as a
-stretch task, inject one of the policies from Milestone 3. Tests provide
+stretch task, inject one of the policies from lesson 07.10. Tests provide
 deterministic fakes; production infrastructure could provide a real database,
 email client, and system clock.
 
@@ -207,7 +223,8 @@ make the code easier to test?
 
 ## After the lab — Production hardening (optional)
 
-Keep working in `exercises/05_service.py` and add one improvement at a time:
+Keep working in `course/08_oop_architecture/10_service.py` and add one
+improvement at a time:
 
 - Add pagination or filtering to repository queries.
 - Add optimistic concurrency using an issue version number.
@@ -219,7 +236,7 @@ Keep working in `exercises/05_service.py` and add one improvement at a time:
 A real SWE repository eventually separates domain, service, infrastructure, and
 tests into different files. This lab intentionally postpones that packaging
 skill so it does not get in the way of learning OOP. Once these exercises feel
-comfortable, splitting Milestone 5 into modules is a useful separate exercise.
+comfortable, splitting lesson 08.10 into modules is a useful separate exercise.
 
 ## Definition of done
 

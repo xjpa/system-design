@@ -1,6 +1,6 @@
-"""FOUNDATIONS 11: Reading type-hint syntax
+"""LESSON 05.10: Reading type-hint syntax
 
-Run: python foundations/11_type_hints.py
+Run: python course/05_python_object_tools/10_type_hints.py
 
 Professional Python often adds type hints:
 
@@ -52,4 +52,4 @@ assert format_user.__annotations__ == {
     "active": bool,
     "return": str,
 }, "Replace the three object hints with str, bool, and str"
-print("Foundations 11 passed: type hints do not change working behavior.")
+print("Lesson 05.10 passed: type hints do not change working behavior.")

@@ -1,6 +1,6 @@
-"""FOUNDATIONS 05: Decisions with if
+"""LESSON 02.10: Decisions with if
 
-Run: python foundations/05_conditions.py
+Run: python course/02_control_flow_and_collections/10_conditions.py
 
 An `if` runs indented code only when a condition is True:
 
@@ -52,4 +52,4 @@ def priority_label(number):
 assert priority_label(10) == "high", "A number of 8 or more should return 'high'"
 assert priority_label(5) == "medium"
 assert priority_label(1) == "low"
-print("Foundations 05 passed: your functions make decisions.")
+print("Lesson 02.10 passed: your functions make decisions.")

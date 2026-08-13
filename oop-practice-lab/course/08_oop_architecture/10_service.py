@@ -1,6 +1,6 @@
-"""Milestone 5: Dependency injection and an application service.
+"""LESSON 08.10: Dependency injection and an application service.
 
-Run: python exercises/05_service.py
+Run: python course/08_oop_architecture/10_service.py
 
 Implement IssueService. Supporting classes are intentionally small so this
 exercise stays in one file.
@@ -142,7 +142,7 @@ def run_tests() -> None:
     service.comment_on_issue(issue.id, "Deployed the fix")
     assert service.resolve_issue(issue.id).resolved is True
     expect_error(LookupError, lambda: service.resolve_issue(UUID(int=999)))
-    print("Milestone 5 passed: service coordinates injected dependencies.")
+    print("Lesson 08.10 passed: service coordinates injected dependencies.")
 
 
 if __name__ == "__main__":

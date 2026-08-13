@@ -1,9 +1,9 @@
-"""FOUNDATIONS 10: Class practice before the OOP lab
+"""LESSON 04.20: Class practice before the OOP lab
 
-Run: python foundations/10_class_practice.py
+Run: python course/04_classes_and_objects/20_class_practice.py
 
 This combines functions, conditions, validation, attributes, and methods. Once
-it passes, you are ready for exercises/00_bank_account.py.
+it passes, you are ready for course/06_oop_fundamentals/10_bank_account.py.
 
 Approach any class problem in this order:
 
@@ -65,4 +65,4 @@ assert cart.total() == 75
 expect_cart_error(" ")
 expect_item_error(cart, 0)
 expect_item_error(cart, -10)
-print("Foundations 10 passed: you are ready for the OOP practice lab!")
+print("Lesson 04.20 passed: you are ready for the OOP practice lab!")

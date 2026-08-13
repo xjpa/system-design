@@ -1,6 +1,6 @@
-"""FOUNDATIONS 04: return
+"""LESSON 01.30: return
 
-Run: python foundations/04_return_values.py
+Run: python course/01_functions/30_return_values.py
 
 `print` displays something for a human. `return` sends a value back to the code
 that called the function.
@@ -47,4 +47,4 @@ def make_greeting(name):
 
 assert make_greeting("Ada") == "Hello Ada", "Return the greeting string"
 assert make_greeting("Lin") == "Hello Lin", "Use the name parameter"
-print("Foundations 04 passed: your functions return useful values.")
+print("Lesson 01.30 passed: your functions return useful values.")
