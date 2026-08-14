@@ -7,6 +7,12 @@ layered, testable OOP design you will see in a Python codebase at work.
 Every lesson is one self-contained file containing a tutorial, worked example,
 small TODOs, and checks. You never need to switch files while solving it.
 
+Each topic now includes a drill lesson with repeated, named problem-solving
+patterns. The drills are bridges: they isolate one piece of logic at a time,
+then finish with a transfer challenge that combines the pieces. If a larger
+lesson feels difficult, return to the preceding drill and solve it again from a
+clean copy without looking at your earlier answer.
+
 ## What you will learn
 
 - classes, instances, class methods, properties, and Python's data model
@@ -66,6 +72,34 @@ Complete these in order:
 | 06 | `oop_fundamentals` | Encapsulation, value objects, and entities |
 | 07 | `oop_patterns` | Strategy and repository abstractions |
 | 08 | `oop_architecture` | Services and dependency injection |
+
+## Deliberate-practice loop
+
+Use the drill files differently from the main lessons:
+
+1. Read only the next TODO and predict the relevant output.
+2. Name the pattern: transform, filter, guard, transition, delegate, or persist.
+3. Write the smallest solution and run the file.
+4. After it passes, change one example and predict the new result.
+5. The next day, redo one drill without copying your previous implementation.
+6. Explain where the same pattern appears in the issue-tracker exercises.
+
+Syntax becomes familiar through recall, while the transfer challenges build the
+skill of selecting and combining patterns in unfamiliar problems.
+
+Run the new drill sequence from `oop-practice-lab`:
+
+```bash
+python course/00_getting_started/30_expression_drills.py
+python course/01_functions/40_function_patterns.py
+python course/02_control_flow_and_collections/40_problem_solving_patterns.py
+python course/03_errors_and_validation/20_validation_patterns.py
+python course/04_classes_and_objects/30_class_design_drills.py
+python course/05_python_object_tools/50_modeling_tools_drills.py
+python course/06_oop_fundamentals/25_domain_model_bridges.py
+python course/07_oop_patterns/30_pattern_building_blocks.py
+python course/08_oop_architecture/20_service_workflow_drills.py
+```
 
 Do not rush. One foundations file per study session is completely reasonable.
 After topic 04 you can preview BankAccount; topic 05 prepares you for the denser

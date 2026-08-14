@@ -3,7 +3,8 @@
 Prerequisite: topics 00–07.
 
 1. `10_service.py` — orchestrate domain behavior and injected dependencies.
+2. `20_service_workflow_drills.py` — repeat the orchestration recipe with tasks.
 
-Good additions: split the one-file service into modules, transaction boundaries,
-API adapters, database adapters, unit versus integration tests, logging,
-concurrency, and a full capstone.
+Lesson 20 makes collaborator calls observable so you can verify both behavior
+and ordering. Its transfer challenge asks you to place a rule in the correct
+layer before adding another workflow.
