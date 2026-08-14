@@ -1,0 +1,12 @@
+groups:
+  - name: learner-alerts
+    rules:
+      - alert: HighHttpErrorRate
+        # TODO: calculate the five-minute error ratio and alert above 5%.
+        expr: TODO
+        # TODO: require the condition to persist for 2 minutes.
+        labels:
+          severity: page
+        annotations:
+          summary: API requests are failing above the tolerated rate
+          # TODO: link a specific runbook.

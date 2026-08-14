@@ -1,0 +1,39 @@
+{
+  "annotations": {"list": []},
+  "editable": true,
+  "panels": [
+    {
+      "type": "stat",
+      "title": "API target up",
+      "datasource": {"type": "prometheus", "uid": "${DS_PROMETHEUS}"},
+      "targets": [{"expr": "up{job=\"lab-api\"}", "refId": "A"}],
+      "gridPos": {"h": 8, "w": 8, "x": 0, "y": 0}
+    },
+    {
+      "type": "timeseries",
+      "title": "Requests",
+      "datasource": {"type": "prometheus", "uid": "${DS_PROMETHEUS}"},
+      "targets": [{"expr": "rate(lab_http_requests_total[1m])", "refId": "A"}],
+      "gridPos": {"h": 8, "w": 16, "x": 8, "y": 0}
+    },
+    {
+      "type": "logs",
+      "title": "Application logs",
+      "datasource": {"type": "loki", "uid": "${DS_LOKI}"},
+      "targets": [{"expr": "{container=~\"devops-practice-lab-(api|worker)-.*\"}", "refId": "A"}],
+      "gridPos": {"h": 10, "w": 24, "x": 0, "y": 8}
+    }
+  ],
+  "schemaVersion": 39,
+  "tags": ["lab"],
+  "templating": {
+    "list": [
+      {"name": "DS_PROMETHEUS", "type": "datasource", "query": "prometheus"},
+      {"name": "DS_LOKI", "type": "datasource", "query": "loki"}
+    ]
+  },
+  "time": {"from": "now-15m", "to": "now"},
+  "title": "Service Overview",
+  "uid": "lab-service-overview",
+  "version": 1
+}

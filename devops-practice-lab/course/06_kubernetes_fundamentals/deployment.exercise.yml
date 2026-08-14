@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: learner-api
+  namespace: devops-lab
+spec:
+  # TODO: run two replicas and retain three rollout revisions.
+  replicas: 1
+  selector:
+    matchLabels: {app: learner-api}
+  template:
+    metadata:
+      labels: {app: learner-api}
+    spec:
+      containers:
+        - name: api
+          image: devops-practice-lab:local
+          imagePullPolicy: Never
+          ports: [{name: http, containerPort: 8080}]
+          # TODO: add distinct HTTP liveness and readiness probes.
+          # TODO: add CPU/memory requests and limits.
+          # TODO: require non-root and disallow privilege escalation.

@@ -1,0 +1,19 @@
+groups:
+  - name: lab-service
+    rules:
+      - alert: QueueDependencyUnavailable
+        expr: lab_dependency_ready == 0
+        for: 30s
+        labels:
+          severity: page
+        annotations:
+          summary: The API cannot reach its queue dependency
+          runbook: docs/runbooks/dependency-unavailable.md
+      - alert: ApiTargetMissing
+        expr: up{job="lab-api"} == 0
+        for: 30s
+        labels:
+          severity: page
+        annotations:
+          summary: Prometheus cannot scrape the API
+          runbook: docs/runbooks/api-unavailable.md

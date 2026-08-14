@@ -1,0 +1,8 @@
+# Put one stage per line in safe feedback order. Remove TODO.
+TODO
+deploy
+build
+unit-test
+publish
+smoke-test
+security-scan

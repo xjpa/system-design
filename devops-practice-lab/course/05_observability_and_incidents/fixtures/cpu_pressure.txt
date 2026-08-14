@@ -1,0 +1,14 @@
+TRAINING SNAPSHOT — assume these values came from the affected host at 14:32 UTC
+
+load average: 5.92, 5.40, 3.10
+CPU: 91% user, 6% system, 3% idle
+
+PID   CPU%  MEM%  COMMAND
+8421  176   4.1   python -m src.worker
+8304  2.4   2.8   python -m src.api
+
+API p95 latency rose from 40 ms to 1.8 s at 14:27 UTC. Error rate remains below
+1%. A worker deployment completed at 14:25 UTC.
+
+Do not jump directly to root cause. What additional per-process, queue-depth,
+deployment, and throttling evidence would distinguish competing hypotheses?

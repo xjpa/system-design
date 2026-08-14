@@ -6,3 +6,11 @@ __pycache__/
 .ruff_cache/
 .venv/
 *.egg-info/
+.env
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+devops-practice-lab/compose.incident.yml
+devops-practice-lab/infra/ansible/inventory.ini
+devops-practice-lab/infra/terraform/terraform.tfvars

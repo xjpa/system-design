@@ -1,0 +1,47 @@
+---
+- name: Configure short-lived container host
+  hosts: lab
+  become: true
+  vars:
+    deploy_user: ec2-user
+  handlers:
+    - name: Restart docker
+      ansible.builtin.service:
+        name: docker
+        state: restarted
+  tasks:
+    - name: Install Docker
+      ansible.builtin.dnf:
+        name: docker
+        state: present
+
+    - name: Enable and start Docker
+      ansible.builtin.service:
+        name: docker
+        enabled: true
+        state: started
+
+    - name: Permit deploy user to operate Docker
+      ansible.builtin.user:
+        name: "{{ deploy_user }}"
+        groups: docker
+        append: true
+      notify: Restart docker
+
+    - name: Create deployment directory
+      ansible.builtin.file:
+        path: /opt/devops-lab
+        state: directory
+        owner: "{{ deploy_user }}"
+        group: "{{ deploy_user }}"
+        mode: "0750"
+
+    - name: Install operational helper
+      ansible.builtin.copy:
+        dest: /usr/local/bin/lab-status
+        mode: "0755"
+        content: |
+          #!/usr/bin/env bash
+          set -euo pipefail
+          docker ps --format 'table {% raw %}{{.Names}}\t{{.Status}}\t{{.Ports}}{% endraw %}'
+          curl --fail --silent http://127.0.0.1:8080/health/live

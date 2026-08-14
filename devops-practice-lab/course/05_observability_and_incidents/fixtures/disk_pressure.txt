@@ -1,0 +1,14 @@
+TRAINING SNAPSHOT — assume these values came from the affected host at 09:10 UTC
+
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       7.8G  7.5G  120M  99% /
+
+Largest paths:
+3.9G /var/lib/docker
+2.1G /var/log
+820M /opt/devops-lab
+
+The API is currently serving traffic. Container restarts began after log writes
+failed. Decide what evidence to preserve, which cleanup is reversible, when to
+escalate, and how to prevent recurrence. Do not propose an unbounded recursive
+delete command.
