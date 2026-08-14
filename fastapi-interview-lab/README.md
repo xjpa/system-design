@@ -52,7 +52,9 @@ one TODO, rerun the same command, and use the next failure as feedback.
 | 04 | `testing_and_async` | Prove behavior and discuss concurrency |
 | 05 | `mock_interview` | Solve and explain a complete prompt |
 
-See [the course index](course/README.md) for lesson order and commands.
+See [the course index](course/README.md) for lesson order and commands. Read the
+README inside every numbered topic before its Python files: each guide teaches
+the additional Python syntax and FastAPI concepts required by those exercises.
 
 ## The scenario
 
