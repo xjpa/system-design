@@ -11,6 +11,6 @@ __pycache__/
 *.tfstate.*
 .terraform/
 crash.log
-devops-practice-lab/compose.incident.yml
-devops-practice-lab/infra/ansible/inventory.ini
-devops-practice-lab/infra/terraform/terraform.tfvars
+labs/devops-practice-lab/compose.incident.yml
+labs/devops-practice-lab/infra/ansible/inventory.ini
+labs/devops-practice-lab/infra/terraform/terraform.tfvars

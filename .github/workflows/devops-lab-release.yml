@@ -15,8 +15,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify source and build the release candidate once
         run: |
-          make -C devops-practice-lab verify
-          docker build -t devops-lab-release-candidate devops-practice-lab/app
+          make -C labs/devops-practice-lab verify
+          docker build -t devops-lab-release-candidate labs/devops-practice-lab/app
       - name: Scan release candidate
         uses: aquasecurity/trivy-action@0.28.0
         with:

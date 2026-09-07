@@ -27,7 +27,7 @@ Requirements: Python 3.10+, Git, Make, curl, and Docker with Compose. Terraform,
 Ansible, AWS CLI, kubectl, and kind are needed only in their respective modules.
 
 ```bash
-cd devops-practice-lab
+cd labs/devops-practice-lab
 make doctor
 make test
 make build

@@ -34,7 +34,7 @@ properties, enums, dataclasses, and equality. Use Python 3.10 or newer.
 No packages are needed for the main exercises:
 
 ```bash
-cd oop-practice-lab
+cd labs/oop-practice-lab
 python course/00_getting_started/10_how_to_use_these_lessons.py
 ```
 

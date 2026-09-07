@@ -26,7 +26,7 @@ Use Python 3.10 or newer. From this directory, create an isolated environment
 and install the small dependency set:
 
 ```bash
-cd fastapi-interview-lab
+cd labs/fastapi-interview-lab
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt

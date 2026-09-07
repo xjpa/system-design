@@ -2,17 +2,17 @@ name: DevOps lab CI
 
 on:
   pull_request:
-    paths: ["devops-practice-lab/**", ".github/workflows/devops-lab-ci.yml"]
+    paths: ["labs/devops-practice-lab/**", ".github/workflows/devops-lab-ci.yml"]
   push:
     branches: [main]
-    paths: ["devops-practice-lab/**", ".github/workflows/devops-lab-ci.yml"]
+    paths: ["labs/devops-practice-lab/**", ".github/workflows/devops-lab-ci.yml"]
 
 permissions:
   contents: read
 
 defaults:
   run:
-    working-directory: devops-practice-lab
+    working-directory: labs/devops-practice-lab
 
 jobs:
   test-and-validate:
