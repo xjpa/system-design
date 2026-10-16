@@ -1,11 +1,15 @@
 # About
 
-## 0. Practice Labs
+## concurrency
 
-- [OOP Practice Lab](labs/oop-practice-lab/README.md) - job-oriented python OOP practice lab I used to learn python
-- [FastAPI Interview Lab](labs/fastapi-interview-lab/README.md) - hands-on Python API fundamentals and coding-interview practice
-- [DevOps Practice Lab](labs/devops-practice-lab/README.md) - a local-first, hands-on course for operating and delivering a small service
+## distributed systems
 
-## 1. Projects
+## networking
 
-- [http-server](http-server) - HTTP server from scratch
+## performance
+
+## runtimes 
+
+## storage
+
+## 
